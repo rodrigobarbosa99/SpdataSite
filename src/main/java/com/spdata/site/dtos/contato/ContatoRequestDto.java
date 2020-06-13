@@ -32,11 +32,7 @@ public class ContatoRequestDto {
 	
 	@NotNull
 	private String					estado;
-	
-//	@Column(length = 1)
-//	@NotNull
-//	private String					tipoContato;
-	
+		
 	@NotNull
 	private String					mensagem;
 

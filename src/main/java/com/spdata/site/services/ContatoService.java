@@ -9,8 +9,7 @@ import com.spdata.site.entities.Contato;
 import com.spdata.site.repositories.ContatoRepository;
 
 @Service
-public class ContatoService {
-	
+public class ContatoService {	
 	@Autowired
 	private ContatoRepository repository;
 	
