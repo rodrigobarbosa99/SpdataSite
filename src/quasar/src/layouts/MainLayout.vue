@@ -56,10 +56,22 @@
         </div>
       </div>
     </q-header>
-
     <q-page-container>
       <router-view />
     </q-page-container>
+        <q-footer elevated>
+             <div class="col-6 col-md-10"></div>
+              <q-tabs v-model="tab" no-caps align="right">
+                <q-tab class="header" name="telefone" label="Telefones:  (31) 3399-2500 / (31) 9 9382-5500" />
+              </q-tabs>
+        <q-toolbar class="bg-gradient">
+          <q-toolbar-title class="gt-sm">
+            <q-tabs v-model="tab" no-caps align="left">
+            <q-tab name="portal_cliente" label="Horario de funcionamento: Seg - Qui: 8:00 as 18:00 / Sexta: 8:00 as 17:00" /> 
+            </q-tabs> 
+          </q-toolbar-title> 
+        </q-toolbar>
+      </q-footer>
   </q-layout>
 </template>
 
