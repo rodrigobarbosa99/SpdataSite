@@ -110,8 +110,6 @@
     
   </table>  
 
-  <h1>
-  
   <div class="solucoes">   
    <q-tabs v-model="tab" align="center">
      <h4><strong>O que dizem os clientes</strong></h4>           
