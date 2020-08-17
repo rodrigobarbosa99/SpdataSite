@@ -4,7 +4,7 @@
       <q-toolbar class="bg-gradient">
         <div>
             <q-toolbar-title class="gt-sm"> 
-              <q-tabs v-model="tab" align="left">
+              <q-tabs v-model="tab" no-caps align="left">
                 <q-tab name="portal_cliente" label="Portal do Cliente" />
                 <q-tab name="portal_colaborador" label="Portal do Colaborador" />
                 <q-tab name="trabalhe_conosco" label="Trabalhe Conosco" />
@@ -42,7 +42,7 @@
             >
           </div>
           <div class="col-6 col-md-10">
-              <q-tabs v-model="tab" align="center">
+              <q-tabs v-model="tab" no-caps align="center">
                 <q-tab class="header" name="home" label="Home" />
                 <q-tab class="header" name="empresa" label="Empresa" />
                 <q-tab class="header" name="solucoes" label="Modulos SGH" />
@@ -54,16 +54,24 @@
               </q-tabs>
           </div>
         </div>
-      </div> 
-
-
-
-      
-                 
-    </q-header>    
-    <q-page-container>            
+      </div>
+    </q-header>
+    <q-page-container>
       <router-view />
-    </q-page-container>    
+    </q-page-container>
+        <q-footer elevated>
+             <div class="col-6 col-md-10"></div>
+              <q-tabs v-model="tab" no-caps align="right">
+                <q-tab class="header" name="telefone" label="Telefones:  (31) 3399-2500 / (31) 9 9382-5500" />
+              </q-tabs>
+        <q-toolbar class="bg-gradient">
+          <q-toolbar-title class="gt-sm">
+            <q-tabs v-model="tab" no-caps align="left">
+            <q-tab name="portal_cliente" label="Horario de funcionamento: Seg - Qui: 8:00 as 18:00 / Sexta: 8:00 as 17:00" /> 
+            </q-tabs> 
+          </q-toolbar-title> 
+        </q-toolbar>
+      </q-footer>
   </q-layout>
 </template>
 
