@@ -54,12 +54,16 @@
               </q-tabs>
           </div>
         </div>
-      </div>
-    </q-header>
+      </div> 
 
-    <q-page-container>
+
+
+      
+                 
+    </q-header>    
+    <q-page-container>            
       <router-view />
-    </q-page-container>
+    </q-page-container>    
   </q-layout>
 </template>
 
