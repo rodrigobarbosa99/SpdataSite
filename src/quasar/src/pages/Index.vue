@@ -108,58 +108,7 @@
      </td>     
     </tr>  
     
-  </table>  
-
-  <div class="solucoes">   
-   <q-tabs v-model="tab" align="center">
-     <h4><strong>O que dizem os clientes</strong></h4>           
-    </q-tabs>    
- </div>
-   
-     <div class="q-pa-md">
-    <q-carousel 
-      v-model="slide"
-      vertical
-      transition-prev="slide-down"
-      transition-next="slide-up"
-      swipeable
-      animated
-      control-color="white"
-      navigation-icon="radio_button_unchecked"
-      navigation
-      padding
-      arrows
-      height="300px"
-      class="bg-purple text-white shadow-1 rounded-borders"
-    >
-      <q-carousel-slide name="style" class="column no-wrap flex-center">
-        <q-icon name="style" size="56px" />
-        <div class="q-mt-md text-center">
-          {{ lorem }}
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide name="tv" class="column no-wrap flex-center">
-        <q-icon name="live_tv" size="56px" />
-        <div class="q-mt-md text-center">
-          {{ lorem1 }}
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide name="layers" class="column no-wrap flex-center">
-        <q-icon name="layers" size="56px" />
-        <div class="q-mt-md text-center">
-          {{ lorem2 }}
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide name="map" class="column no-wrap flex-center">
-        <q-icon name="terrain" size="56px" />
-        <div class="q-mt-md text-center">
-          {{ lorem3 }}
-        </div>
-      </q-carousel-slide>
-    </q-carousel>
-  </div>
-    
- 
+  </table> 
 
   
 </template>
@@ -183,17 +132,5 @@ export default {
 }
 </script>
 
-<script>
-export default {
-  data () {
-    return {
-      slide: 'style',
-      lorem: 'É bastante interessante participar do curso de capacitação, pois para mim o sistema é novo, haja vista, que assumi recentemente o cargo de gestora de TI, com certeza é um grande investimento profissional.',
-      lorem1: 'Durante o curso de Faturamento de Convênios – Momento em que a SPDATA “posiciona e capacita” seus clientes com ferramentas e subsídios tecnológicos para garantir a eficácia na Gestão Hospitalar.',
-      lorem2: 'O Software de Gestão Hospitalar da SPDATA é um ferramenta indispensável para gerir/administrar uma instituição de saúde com foco voltado para os processos institucionais. Outro ponto forte da empresa é o SAC que é nota 10.',
-      lorem3: 'Todo Gestor precisa de muitas informações no seu dia a dia. E o sistema SPDATA é referência como fonte de informações gerenciais para a tomada das decisões.'
-    }
-  }
-}
-</script>
+
 
